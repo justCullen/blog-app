@@ -28,7 +28,8 @@ const createPost = async (req, res) => {
     try {
         const post = await new Post(req.body)
         await post.save()
-        res.status(201).json(post)
+        const posts = await Post.find()
+        res.status(201).json(posts)
     } catch (error) {
         console.log(error)
         res.status(500).json({ error: error.message })
@@ -44,6 +45,7 @@ const updatePost = async (req, res) => {
         if (!post) {
             return res.status(404).json({ message: 'Post not found!' })
         }
+        res.status(200).json(post)
     } )
 }
 
