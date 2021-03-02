@@ -23,7 +23,7 @@ const main = async () => {
     "cohort": "Sapphire"
   }
   ]
-  await Product.insertMany(products)
+  await Post.insertMany(Post)
   console.log("Created products!")
 }
 const run = async () => {
