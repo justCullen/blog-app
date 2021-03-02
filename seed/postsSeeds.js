@@ -23,8 +23,10 @@ const main = async () => {
     "cohort": "Sapphire"
   }
   ]
+
   await Post.insertMany(posts)
   console.log("Created posts!")
+
 }
 const run = async () => {
   await main()
