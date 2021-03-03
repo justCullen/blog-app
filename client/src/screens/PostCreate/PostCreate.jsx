@@ -1,6 +1,6 @@
 import { useState } from "react";
 import Layout from "../../components/shared/Layout/Layout";
-import { CreatePost } from "../../services/posts";
+import { createPost } from "../../services/posts";
 import { useHistory } from "react-router-dom";
 function PostCreate(props) {
   let history = useHistory()
@@ -13,7 +13,7 @@ function PostCreate(props) {
   });
   const handleSubmit = async (e) => {
     e.preventDefault()
-    await CreatePost(post)
+    await createPost(post)
     history.push("/")
   };
   const handleChange = (e) => {
