@@ -4,19 +4,20 @@ import { Link } from "react-router-dom";
 
 function Post(props) {
   return (
-    <>
-      <Link className="post" to={`/posts/${props._id}`}>
-        <div className="post-container">
-          <div className="post-userName">{props.userName}</div>
+    <div className="post-container">
+      <Link className="post" to={`/posts/${props.post._id}`}>
+        <div className="user-container">
+          <div className="post-userName">{props.post.userName}</div>
           <img
             className="post-imgURL"
-            src={props.imgURL}
-            alt={props.userName}
+            src={props.post.imgURL}
+            alt={props.post.userName}
           />
-          <div className="content">{`${props.content}`}</div>
+          <div className="content">{`${props.post.content}`}</div>
         </div>
       </Link>
-    </>
+    </div>
+    
   );
 }
 
