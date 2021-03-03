@@ -38,6 +38,24 @@
   margin-top: 15px;
   font-size: 1em;
 }
+.delete-button{
+  margin: 20px auto;
+  width: 120px;
+  height: 40px;
+  cursor: pointer;
+  background: transparent;
+  border: 1px solid #101619;
+  outline: none;
+  transition: 1s ease-in-out;
+  border-radius: 5px;
+  
+}
+.delete-button:hover{
+  transition: 0.8s ease-in-out;
+  background: #4F95DA;
+  color: #fff;
+}
+
 
 a {
   text-decoration: none;
