@@ -11,7 +11,7 @@ function App() {
       <Switch>
         <Route exact path="/" component={Home} />
         <Route path="/add-post" component={PostCreate} />
-        {/* <Route exact path="/posts/:id/edit" component={PostEdit} /> */}
+        <Route exact path="/posts/:id/edit" component={PostEdit} />
         <Route exact path="/posts/:id" component={PostDetail} />
       </Switch>
     </div>
