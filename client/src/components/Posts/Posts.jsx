@@ -4,7 +4,8 @@ import Post from "../Post/Post";
 import "./Posts.css";
 
 function Posts() {
-  const [posts, setPosts] = useState([]);
+  const [posts, setPosts] = useState([])
+  const [toggleFetch, setToggleFetch] = useState(false)
 
   useEffect(() => {
     const assignPosts = async () => {
@@ -12,14 +13,15 @@ function Posts() {
       setPosts(posts);
     };
     assignPosts();
-  }, []);
+  }, [toggleFetch]);
+
   console.log(posts);
 
   return (
     <div className="post-section">
       {posts.map((post, index) => (
         <div className="post" key={index}>
-          <Post post={post} />
+          <Post setToggleFetch={setToggleFetch} post={post} />
         </div>
       ))}
     </div>
