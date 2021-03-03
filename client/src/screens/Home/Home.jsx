@@ -1,6 +1,6 @@
-import './Home.css'
-import Posts from '../../components/Posts/Posts'
-import Layout from '../../components/shared/Layout/Layout'
+import "./Home.css";
+import Posts from "../../components/Posts/Posts";
+import Layout from "../../components/shared/Layout/Layout";
 
 const Home = () => {
   return (
@@ -9,7 +9,7 @@ const Home = () => {
         <Posts />
       </div>
     </Layout>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;
