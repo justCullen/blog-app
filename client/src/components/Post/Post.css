@@ -44,11 +44,11 @@
   height: 40px;
   cursor: pointer;
   background: transparent;
-  border: 1px solid #101619;
+  border: 1px solid #2f424c;
   outline: none;
   transition: 1s ease-in-out;
   border-radius: 5px;
-  
+  font-size: 14px;
 }
 .delete-button:hover{
   transition: 0.8s ease-in-out;
