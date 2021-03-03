@@ -4,14 +4,10 @@ import { useParams, Redirect } from 'react-router-dom';
 import Layout from '../../components/shared/Layout/Layout';
 import { getPost, updatePost } from '../../services/posts';
 
-const PostEdit = () => {
+const PostEdit = (props) => {
 
-  const [Post, setPost] = useState({
-  
-    
-  
+  const [post, setPost] = useState({
     content: '',
- 
   })
 
   const [isUpdated, setUpdated] = useState(false)

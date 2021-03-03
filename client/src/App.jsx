@@ -1,7 +1,7 @@
 import './App.css';
 import Home from "./screens/Home/Home"
 import PostCreate from "./screens/PostCreate/PostCreate"
-// import PostEdit from "./screens/PostEdit/PostEdit"
+import PostEdit from "./screens/PostEdit/PostEdit"
 import PostDetail from "./screens/PostDetail/PostDetail"
 import { Route, Switch } from 'react-router-dom'
 
