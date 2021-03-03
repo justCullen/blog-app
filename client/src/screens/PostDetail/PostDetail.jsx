@@ -35,6 +35,7 @@ export default function PostDetail (props) {
                     <div className="location">{post.location}</div>
                     <div className="content">{post.content}</div>
                 </div>
+                
             </div>
         </Layout>
     )

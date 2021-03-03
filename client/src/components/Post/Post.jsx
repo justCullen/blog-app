@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 function Post(props) {
   return (
     <div className="post-container">
-      <Link className="post" to={`/posts/${props.post._id}`}>
+      <Link to={`/posts/${props.post._id}`}>
         <div className="user-container">
           <div className="post-userName">{props.post.userName}</div>
           <img
@@ -17,7 +17,6 @@ function Post(props) {
         </div>
       </Link>
     </div>
-    
   );
 }
 

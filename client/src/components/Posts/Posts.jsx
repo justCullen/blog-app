@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { getPosts } from "../../services/posts"
 import Post from "../Post/Post"
+import "./Posts.css"
 
 function Posts () {
   const [posts, setPosts] = useState([])
@@ -15,9 +16,9 @@ function Posts () {
   console.log(posts);
 
   return (
-    <div>
+    <div className="post-section">
       {posts.map((post, index) => (
-        <div key={index}>
+        <div className="post" key={index}>
           <Post post={post}/>
         </div>
       ))}
