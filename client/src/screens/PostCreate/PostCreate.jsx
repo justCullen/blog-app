@@ -3,7 +3,7 @@ import Layout from "../../components/shared/Layout/Layout";
 import { createPost } from "../../services/posts";
 import { useHistory } from "react-router-dom";
 function PostCreate(props) {
-  let history = useHistory()
+  let history = useHistory();
   const [post, setPost] = useState({
     userName: "",
     imgURL: "",
@@ -12,17 +12,17 @@ function PostCreate(props) {
     cohort: "",
   });
   const handleSubmit = async (e) => {
-    e.preventDefault()
-    await createPost(post)
-    history.push("/")
+    e.preventDefault();
+    await createPost(post);
+    history.push("/");
   };
   const handleChange = (e) => {
-    const { name, value } = e.target
+    const { name, value } = e.target;
     setPost({
-            ...post,
-            [name]: value
-    })
-}
+      ...post,
+      [name]: value,
+    });
+  };
   return (
     <Layout user={props.user}>
       <form className="postcreate-form" onSubmit={handleSubmit}>
