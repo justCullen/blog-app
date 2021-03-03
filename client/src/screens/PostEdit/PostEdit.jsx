@@ -1,47 +1,42 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect } from "react";
 import "./PostEdit.css";
-import { useParams, Redirect } from 'react-router-dom';
-import Layout from '../../components/shared/Layout/Layout';
-import { getPost, updatePost } from '../../services/posts';
+import { useParams, Redirect } from "react-router-dom";
+import Layout from "../../components/shared/Layout/Layout";
+import { getPost, updatePost } from "../../services/posts";
 
-const PostEdit = () => {
+const PostEdit = (props) => {
+  const [post, setPost] = useState({
+    content: "",
+  });
 
-  const [Post, setPost] = useState({
-    // userName: '',
-    // imgURL: '',
-    // location: '',
-    content: '',
-    // cohort: ''
-  })
-
-  const [isUpdated, setUpdated] = useState(false)
-  let { id } = useParams()
+  const [isUpdated, setUpdated] = useState(false);
+  let { id } = useParams();
 
   useEffect(() => {
     const fetchPost = async () => {
-      const post = await getPost(id)
-      setPost(post)
-    }
-    fetchPost()
-  }, [id])
+      const post = await getPost(id);
+      setPost(post);
+    };
+    fetchPost();
+  }, [id]);
 
   const handleChange = (event) => {
-    const { name, value } = event.target
+    const { name, value } = event.target;
     setPost({
       ...post,
-      [name]: value
-    })
-  } 
+      [name]: value,
+    });
+  };
 
   const handleSubmit = async (event) => {
-    event.preventDefault()
-    let { id } = props.match.params
-    const updated = await updatePost(id, post)
-    setUpdated(updated)
-  }
+    event.preventDefault();
+    let { id } = props.match.params;
+    const updated = await updatePost(id, post);
+    setUpdated(updated);
+  };
 
   if (isUpdated) {
-    return <Redirect to={`/posts/${props.match.params.id}`} />
+    return <Redirect to={`/posts/${props.match.params.id}`} />;
   }
 
   return (
@@ -52,12 +47,14 @@ const PostEdit = () => {
             className="post-content"
             placeholder="What's on your mind?"
             value={post.content}
-            name='content'
+            name="content"
             required
             autoFocus
             onChange={handleChange}
           />
-          <button type='submit' className="post-button">Save Edits</button>
+          <button type="submit" className="post-button">
+            Save Edits
+          </button>
         </form>
       </div>
     </Layout>
