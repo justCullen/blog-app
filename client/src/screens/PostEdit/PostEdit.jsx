@@ -7,11 +7,11 @@ import { getPost, updatePost } from '../../services/posts';
 const PostEdit = () => {
 
   const [Post, setPost] = useState({
-    // userName: '',
-    // imgURL: '',
-    // location: '',
+  
+    
+  
     content: '',
-    // cohort: ''
+ 
   })
 
   const [isUpdated, setUpdated] = useState(false)
