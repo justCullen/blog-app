@@ -26,13 +26,14 @@ export default function PostDetail(props) {
 
   return (
     <Layout>
-      <div className="user-container">
+      <div className="post-user-container">
         <div className="post-img-container">
           <img className="post-imgURL" src={post.imgURL} alt={post.userName} />
         </div>
         <div>
           <div className="post-userName">{post.userName}</div>
           <div className="location">{post.location}</div>
+          <div className="cohort">From {post.cohort}</div>
           <div className="content">{post.content}</div>
           <EditButton id={id} />
         </div>

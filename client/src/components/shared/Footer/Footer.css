@@ -1,0 +1,22 @@
+footer{
+  /* width: 45px; */
+  height: 85px;
+  background: #312442;
+  padding: 10px auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 24px;
+  color: #fff;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  
+}
+
+.fab{
+  margin: 10px;
+  color: #b71515;
+  font-size: 24px;
+}

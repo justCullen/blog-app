@@ -1,10 +1,12 @@
-.post-container{
+.post-container {
   width: 300px;
   justify-content: center;
   align-items: center;
-  height: 50vh;
-  background-color: #f5f5f5;
-  border: solid #f5f5f5;
+  background-color: #eacdc2;
+  margin-top: 20px;
+  border: #312442 solid 3px;
+  border-radius: 10px;
+  box-shadow: 10px 10px 50px rgba(49, 36, 66, 1); ;
 }
 .user-container {
   background-color: #759aab;
@@ -13,10 +15,12 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  color: white;
+
+  color: #EDDEA4;
+
 
 }
-.post-imgURL{
+.post-imgURL {
   height: 180px;
   width: 180px;
   border-radius: 50%;
@@ -24,14 +28,14 @@
   margin-top: 20px;
   box-shadow: 0 10px 50px rgba(70, 99, 114, 1);
 }
-.post-imgURL:hover{
+.post-imgURL:hover {
   height: 187px;
   width: 187px;
-  border: 5px solid #9AB4C1;
+  border: 5px solid #9ab4c1;
   box-shadow: 0 10px 50px rgba(154, 180, 193, 1);
-  transition: .3s;
+  transition: 0.3s;
 }
-.post-userName{
+.post-userName {
   margin-top: 15px;
   font-size: 1.75em;
 }
@@ -39,7 +43,7 @@
   margin-top: 15px;
   font-size: 1em;
 }
-.delete-button{
+.delete-button {
   margin: 20px auto;
   width: 120px;
   height: 40px;
@@ -51,12 +55,11 @@
   border-radius: 5px;
   font-size: 14px;
 }
-.delete-button:hover{
+.delete-button:hover {
   transition: 0.8s ease-in-out;
-  background: #4F95DA;
+  background: #4f95da;
   color: #fff;
 }
-
 
 a {
   text-decoration: none;
