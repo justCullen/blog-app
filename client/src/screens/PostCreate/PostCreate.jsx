@@ -2,6 +2,7 @@ import { useState } from "react";
 import Layout from "../../components/shared/Layout/Layout";
 import { createPost } from "../../services/posts";
 import { useHistory } from "react-router-dom";
+import "./PostCreate.css"
 function PostCreate(props) {
   let history = useHistory();
   const [post, setPost] = useState({
