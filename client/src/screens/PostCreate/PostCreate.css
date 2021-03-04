@@ -1,12 +1,10 @@
 .postcreate-form{
   display: flex;
   flex-direction: column;
-  color: #37b9f1;
-  background: #000;
+  background: #312442;
   border-radius: 25px;
   padding: 20px;
   margin: 10rem auto;
-  border: 1px solid #37b9f1;
   font-weight: 300px;
   height: 500px;
   width: 650px;
@@ -22,4 +20,18 @@
   border-bottom: 1px solid #fff;
   font-size: 18px;
   color: #fff;
+  outline: none;
+}
+.submit-button{
+  width: 135px;
+  margin: 20px auto;
+  border-radius: 25px;
+  font-size: 25px;
+}
+.submit-button:hover{
+  color: #fff;
+  background-color: #312442;
+  transition: 0.8s ease-in-out;
+  opacity: 0.3;
+  cursor: pointer;
 }
