@@ -1,8 +1,12 @@
-button{
+.edit-button{
   margin: 10px;
   font-family: 'Iceberg';
-  font-size:large;
+  font-size: large;
   transition: all 0.2s;
+  background-color: #EACDC2;
+  color: #759AAB;
+  padding: 5px 25px;
+  border-radius: 20px;
 }
 button:hover{
 cursor: pointer;
