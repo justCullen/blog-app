@@ -66,7 +66,7 @@ const PostEdit = (props) => {
                 placeholder="Where do you live?"
                 value={post.location}
                 name="location"
-                required
+                // required
                 autoFocus
                 onChange={handleChange}
               />
@@ -78,7 +78,7 @@ const PostEdit = (props) => {
                   placeholder="What's on your mind?"
                   value={post.content}
                   name="content"
-                  required
+                  // required
                   autoFocus
                   onChange={handleChange}
               />
