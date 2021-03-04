@@ -4,7 +4,7 @@ export default function Footer() {
     <div className="content">
       <footer>
       <div >Sapphire.post()</div>
-      <a href=""><i class="fab fa-github-square"></i></a>
+      <a href="https://github.com/justCullen/blog-app"><i class="fab fa-github-square"></i></a>
     </footer>
     </div>
     
