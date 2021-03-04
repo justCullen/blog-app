@@ -1,6 +1,14 @@
-.user-container{
-  height: 100vh;
+.post-user-container{
+  height: 400px;
+  width: 40%;
+  background-color: #759aab;
   color: #EDDEA4;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: #312442 solid 3px;
+  box-shadow: 10px 10px 50px rgba(49, 36, 66, 1); ;
 }
 
 
