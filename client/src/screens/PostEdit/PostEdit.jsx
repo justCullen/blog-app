@@ -60,7 +60,7 @@ const PostEdit = (props) => {
               />
             </div>
             <div className="input-row">
-              <label htmlFor="location">Your Location: </label>
+              <label htmlFor="location">Location: </label>
               <input
                 className="post-content"
                 placeholder="Where do you live?"
