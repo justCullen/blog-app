@@ -1,0 +1,11 @@
+button{
+  margin: 10px;
+  font-family: 'Iceberg';
+  font-size:large;
+  transition: all 0.2s;
+}
+button:hover{
+cursor: pointer;
+background-color: #312442;
+color: #EDDEA4;
+}
