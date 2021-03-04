@@ -33,7 +33,7 @@ export default function PostDetail(props) {
         <div>
           <div className="post-userName">{post.userName}</div>
           <div className="location">{post.location}</div>
-          <div className="cohort">From {post.cohort}</div>
+          <div className="cohort">{post.cohort}</div>
           <div className="content">{post.content}</div>
           <EditButton id={id} />
         </div>
