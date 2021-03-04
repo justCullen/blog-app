@@ -56,7 +56,7 @@ function PostCreate(props) {
         />
         <input
           className="input-location"
-          placeholder="Location of post"
+          placeholder="Where do you live?"
           value={post.location}
           name="location"
           required
@@ -64,7 +64,7 @@ function PostCreate(props) {
         />
         <input
           className="input-cohort"
-          placeholder="Cohort"
+          placeholder="Your Cohort"
           value={post.cohort}
           name="cohort"
           required

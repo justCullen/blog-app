@@ -6,6 +6,9 @@ import { getPost, updatePost } from "../../services/posts";
 
 const PostEdit = (props) => {
   const [post, setPost] = useState({
+    userName: "",
+    location: "",
+    imgURL: "",
     content: "",
   });
 
@@ -43,19 +46,57 @@ const PostEdit = (props) => {
     <Layout user={props.user}>
       <div className="post-edit">
         <form className="edit-form" onSubmit={handleSubmit}>
-          <textarea
-            className="post-content"
-            placeholder="What's on your mind?"
-            value={post.content}
-            name="content"
-            required
-            autoFocus
-            onChange={handleChange}
-            rows={5}
-          />
-          <button type="submit" className="post-button">
-            Save Edits
-          </button>
+          <div className="form-inputs">
+            <div className="input-row">
+              <label htmlFor="userName">Username: </label>
+              <input
+                className="post-content"
+                placeholder="Your desired username"
+                value={post.userName}
+                name="userName"
+                required
+                autoFocus
+                onChange={handleChange}
+              />
+            </div>
+            <div className="input-row">
+              <label htmlFor="location">Your Location: </label>
+              <input
+                className="post-content"
+                placeholder="Where do you live?"
+                value={post.location}
+                name="location"
+                required
+                autoFocus
+                onChange={handleChange}
+              />
+            </div>
+            <div className="input-row">
+              <label htmlFor="status">Status: </label>
+              <textarea
+                  className="post-content"
+                  placeholder="What's on your mind?"
+                  value={post.content}
+                  name="content"
+                  required
+                  autoFocus
+                  onChange={handleChange}
+              />
+            </div>
+            <div className="input-row">
+              <label htmlFor="imageUrl">Image Url: </label>
+              <input
+                  className="post-content"
+                  placeholder="Link to your desired Profile Image"
+                  value={post.imgURL}
+                  name="imgURL"
+                  required
+                  autoFocus
+                  onChange={handleChange}
+              />
+            </div>
+          </div>
+          <button type="submit" className="post-button">Save Edits</button>
         </form>
       </div>
     </Layout>

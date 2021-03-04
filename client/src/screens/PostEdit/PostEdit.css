@@ -4,7 +4,7 @@
     background: #312442;
     border-radius: 25px;
     position: absolute;
-    top: 40%;
+    top: 45%;
     left: 50%;
     transform: translate(-50%, -50%);
     font-weight: 300px;
@@ -12,11 +12,10 @@
     width: 650px;
 }
 
-.edit-form {
-    display: flex;
-    justify-content: center;
-    /* align-items: center; */
+.edit-form button {
+    align-self: flex-end;
 }
+
 .post-content {
     width: 450px;
     border-radius: 6px;
@@ -26,19 +25,41 @@
     background: transparent;
     border: none;
     border-bottom: 1px solid #fff;
-    font-size: 18px;
+    font-size: 16px;
     color: #fff;
     outline: none;
+    font-family: 'Capriola', sans-serif;
 }
 .post-button{
     width: 135px;
     margin: 20px auto;
     border-radius: 25px;
     font-size: 25px;
+    position: relative;
 }
 .post-button:hover{
     color: #fff;
     background-color: #eacdc2;
     transition: 1s ease-in-out;
     cursor: pointer;
+}
+
+.input-row {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.input-row label {
+    color: white;
+    font-size: 18px;
+    font-family: 'Capriola', sans-serif;
+    margin-right: 30px;
+}
+
+.form-inputs {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
 }
