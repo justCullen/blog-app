@@ -74,29 +74,31 @@ const PostEdit = (props) => {
             <div className="input-row">
               <label htmlFor="status">Status: </label>
               <textarea
-                  className="post-content"
-                  placeholder="What's on your mind?"
-                  value={post.content}
-                  name="content"
-                  required
-                  autoFocus
-                  onChange={handleChange}
+
+                className="post-content"
+                placeholder="What's on your mind?"
+                value={post.content}
+                name="content"
+                required
+                onChange={handleChange}
+
               />
             </div>
             <div className="input-row">
               <label htmlFor="imageUrl">Image Url: </label>
               <input
-                  className="post-content"
-                  placeholder="Link to your desired Profile Image"
-                  value={post.imgURL}
-                  name="imgURL"
-                  required
-                  autoFocus
-                  onChange={handleChange}
+                className="post-content"
+                placeholder="Link to your desired Profile Image"
+                value={post.imgURL}
+                name="imgURL"
+                required
+                onChange={handleChange}
               />
             </div>
           </div>
-          <button type="submit" className="post-button">Save Edits</button>
+          <button type="submit" className="post-button">
+            Save Edits
+          </button>
         </form>
       </div>
     </Layout>
