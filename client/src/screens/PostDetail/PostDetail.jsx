@@ -26,7 +26,7 @@ export default function PostDetail(props) {
 
   return (
     <Layout>
-      <div className="user-container">
+      <div className="post-user-container">
         <div className="post-img-container">
           <img className="post-imgURL" src={post.imgURL} alt={post.userName} />
         </div>
