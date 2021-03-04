@@ -26,6 +26,7 @@ function PostCreate(props) {
   };
   return (
     <Layout user={props.user}>
+      <div className= 'form-container'>
       <form className="postcreate-form" onSubmit={handleSubmit}>
         <input
           className="input-userName"
@@ -72,7 +73,8 @@ function PostCreate(props) {
         <button type="submit" className="submit-button">
           Submit
         </button>
-      </form>
+        </form>
+        </div>
     </Layout>
   );
 }
