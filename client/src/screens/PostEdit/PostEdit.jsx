@@ -51,6 +51,7 @@ const PostEdit = (props) => {
             required
             autoFocus
             onChange={handleChange}
+            rows={5}
           />
           <button type="submit" className="post-button">
             Save Edits
