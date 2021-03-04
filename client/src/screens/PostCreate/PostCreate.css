@@ -30,8 +30,7 @@
 }
 .submit-button:hover{
   color: #fff;
-  background-color: #312442;
-  transition: 0.8s ease-in-out;
-  opacity: 0.3;
+  background-color: #eacdc2;
+  transition: 1s ease-in-out;
   cursor: pointer;
 }
