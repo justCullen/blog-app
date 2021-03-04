@@ -66,7 +66,7 @@ const PostEdit = (props) => {
                 placeholder="Where do you live?"
                 value={post.location}
                 name="location"
-                // required
+                required
                 autoFocus
                 onChange={handleChange}
               />
@@ -74,12 +74,14 @@ const PostEdit = (props) => {
             <div className="input-row">
               <label htmlFor="status">Status: </label>
               <textarea
+
                 className="post-content"
                 placeholder="What's on your mind?"
                 value={post.content}
                 name="content"
                 required
                 onChange={handleChange}
+
               />
             </div>
             <div className="input-row">
