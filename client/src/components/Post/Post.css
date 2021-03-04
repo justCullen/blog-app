@@ -3,8 +3,9 @@
   justify-content: center;
   align-items: center;
   height: 50vh;
-  background-color: #f5f5f5;
-  border: solid #f5f5f5;
+  background-color: #eacdc2;
+  margin-top: 20px;
+  /* border: solid #f5f5f5; */
 }
 .user-container {
   background-color: #759aab;
