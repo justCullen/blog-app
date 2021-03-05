@@ -10,6 +10,7 @@
   margin-top: 60px;
   transform: translate(80%, 15%);
   border: #312442 solid 3px;
+  border-radius: 10px;
   box-shadow: 11px 11px 10px 5px rgba(49, 36, 66, 0.9);
 }
 .cohort{
